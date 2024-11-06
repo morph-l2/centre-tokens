@@ -19,7 +19,8 @@
     "solhint": "solhint 'contracts/**/*.sol'",
     "precommit": "yarn typechain && yarn fmt && yarn typecheck && yarn lint && yarn solhint",
     "slither": "slither --solc-disable-warnings --disable-color --exclude-dependencies .",
-    "migrate": "truffle migrate --interactive"
+    "migrate": "truffle migrate --interactive",
+    "clean": "rm -rf ./abi ./dist ./artifacts ./cache ./node_modules ./typechain-types ./logs ./forge-artifacts ./cache-hardhat"
   },
   "repository": {
     "type": "git",
